@@ -4,8 +4,9 @@ html{
   scroll-behavior: smooth;
 }
 body {
-font-family: 'Capriola', sans-serif;
+  font-family: 'Capriola', sans-serif;
   color: #272829;
+  transition: .3s linear;
 }
 
 a {
@@ -27,8 +28,8 @@ h6 {
 font-family: 'Capriola', sans-serif;
 }
 
-/*--------------------------------------------------------------
-# Back to top button
+/*----
+Back to top button
 ------*/
 .back-to-top {
   position: fixed;
@@ -61,9 +62,9 @@ font-family: 'Capriola', sans-serif;
   opacity: 1;
 }
 
-/*--------------------------------------------------------------
-# Preloader
---------------------------------------------------------------*/
+/*-----
+Preloader
+-------*/
 #preloader {
   position: fixed;
   top: 0;
@@ -110,18 +111,18 @@ font-family: 'Capriola', sans-serif;
   }
 }
 
-/*--------------------------------------------------------------
-# Disable aos animation delay on mobile devices
---------------------------------------------------------------*/
+/*-------
+ Disable aos animation delay on mobile devices
+---------*/
 @media screen and (max-width: 768px) {
   [data-aos-delay] {
     transition-delay: 0 !important;
   }
 }
 
-/*--------------------------------------------------------------
-# Header
---------------------------------------------------------------*/
+/*-----
+ Header
+------*/
 #header {
   position: fixed;
   top: 0;
@@ -148,12 +149,11 @@ font-family: 'Capriola', sans-serif;
   }
 }
 
-/*--------------------------------------------------------------
+/*--------
 # Navigation Menu
---------------------------------------------------------------*/
-/**
-* Desktop Navigation 
-*/
+----------*/
+
+/*--- Desktop Navigation ---*/
 .nav-menu {
   padding: 0;
   display: block;
@@ -184,7 +184,6 @@ font-family: 'Capriola', sans-serif;
   height: 56px;
   width: 100%;
   overflow: hidden;
-  transition: 0.3s;
 }
 
 .nav-menu a i,
@@ -238,9 +237,8 @@ font-family: 'Capriola', sans-serif;
   display: block;
 }
 
-/**
-* Mobile Navigation 
-*/
+    /* ---- Mobile Navigation ----*/
+    
 .mobile-nav-toggle {
   position: fixed;
   right: 10px;
@@ -275,9 +273,7 @@ font-family: 'Capriola', sans-serif;
   background-color: lightseagreen;
 }
 
-/*--------------------------------------------------------------
-# Hero Section
---------------------------------------------------------------*/
+      /*------- Hero Section -------*/
 #hero {
   width: 100%;
   height: 100vh;
@@ -366,9 +362,9 @@ font-family: 'Capriola', sans-serif;
   }
 }
 
-/*--------------------------------------------------------------
-# Sections General
---------------------------------------------------------------*/
+/*------
+ Sections General
+--------*/
 section {
   padding: 60px 0;
   overflow: hidden;
@@ -415,9 +411,9 @@ section {
   margin-bottom: 0;
 }
 
-/*--------------------------------------------------------------
-# About
---------------------------------------------------------------*/
+/*------
+ About
+--------*/
 .about .content h3 {
   font-weight: 800;
   font-size: 30px;
@@ -453,9 +449,9 @@ section {
     width: 300px;
 }
 
-/*--------------------------------------------------------------
+/*------
 # Skills
---------------------------------------------------------------*/
+--------*/
 .skills .progress {
   height: 60px;
   display: block;
@@ -469,11 +465,7 @@ section {
   text-transform: uppercase;
   display: block;
   font-weight: 600;
- font-family: 'Capriola', sans-serif;
-
-
-
-
+  font-family: 'Capriola', sans-serif;
   border-radius: 20px;
   color: darkslategray;
 }
@@ -496,9 +488,9 @@ section {
   background-color: lightseagreen;
 }
 
-/*--------------------------------------------------------------
-# Portfolio
---------------------------------------------------------------*/
+/*--------
+ Portfolio
+----------*/
 .portfolio .portfolio-item {
   margin-bottom: 30px;
 }
@@ -652,9 +644,9 @@ section {
   bottom: 15px;
   right: 15px;
 }
-/*--------------------------------------------------------------
-# Services
---------------------------------------------------------------*/
+/*---------
+ Services
+-----------*/
 .services .icon-box {
   text-align: center;
   padding: 70px 20px 80px 20px;
@@ -786,9 +778,9 @@ section {
   fill: #11dbcf;
 }
 
-/*--------------------------------------------------------------
-# Contact
---------------------------------------------------------------*/
+/*-------
+ Contact
+---------*/
 .contact .info {
   width: 100%;
   background: #fff;
@@ -934,9 +926,9 @@ section {
   }
 }
 
-/*--------------------------------------------------------------
-# Footer
---------------------------------------------------------------*/
+/*-----
+ Footer
+-------*/
 #footer {
   background: #f7f8f9;
   color: darkslategray;
@@ -992,18 +984,18 @@ section {
   margin: 0 0 5px 0;
 }
 
-/*--------------------------------------------------------------
+/*-----
 # Thanks
---------------------------------------------------------------*/
+-------*/
 .container-fluid{
     min-height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
-   background: url("../img/portfolio/bg.png") top right no-repeat;
-  background-size: cover;
-  position: relative;
+    background: url("../img/portfolio/bg.png") top right no-repeat;
+    background-size: cover;
+    position: relative;
 }
 .thanks h1{
     font-size: 50px;
@@ -1028,7 +1020,6 @@ section {
    margin-top: 80px;
 }
 .button .btn-thanks{
-  
     width: 50%;
     border-radius: 20px;
     padding: 5px 60px;
@@ -1044,18 +1035,18 @@ section {
     color: #fff;
     transform: scale(1.1);
 }
-/*--------------------------------------------------------------
-# Btn-Whatsapp
---------------------------------------------------------------*/
+/*------
+ Button-Whatsapp
+--------*/
 .btn-whats{
     position: relative;
     width: 40px;
     height: 40px;
     border-radius: 50%;
     background: #4dae2c;
-  box-shadow: 0px 0px 8px black;
-  bottom: 15px;
-  left: 15px;
+    box-shadow: 0px 0px 8px black;
+    bottom: 15px;
+    left: 15px;
 }
 .btn-whats i{
     display: flex;
