@@ -84,11 +84,11 @@ font-family: 'Capriola', sans-serif;
   top: calc(50% - 30px);
   left: calc(50% - 30px);
   border: 8px solid lightseagreen;
-  border-top-color: #fff;
-  border-bottom-color: #fff;
+  border-top-color: darkslategray;
+  border-bottom-color: darkslategray;
   border-radius: 50%;
-  width: 60px;
-  height: 60px;
+  width: 70px;
+  height: 70px;
   -webkit-animation: animate-preloader 1s linear infinite;
   animation: animate-preloader 1s linear infinite;
 }
@@ -552,7 +552,7 @@ section {
   background: rgba(69, 80, 91, 0.8);
 }
 .portfolio .portfolio-wrap:hover{
-  box-shadow: 0 0 20px rgba(0,0,0,0.5);
+  box-shadow: 5px 5px 15px rgba(0,0,0,0.5), -5px -5px 15px rgba(0,0,0,0.5);
 }
 
 .portfolio .portfolio-wrap::before {
