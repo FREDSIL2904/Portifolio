@@ -1,12 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Capriola&display=swap');
 
-html{
-  scroll-behavior: smooth;
-}
+/*--------------------------------------------------------------
+# General
+--------------------------------------------------------------*/
 body {
-  font-family: 'Capriola', sans-serif;
+font-family: 'Capriola', sans-serif;
   color: #272829;
-  transition: .3s linear;
 }
 
 a {
@@ -28,9 +27,9 @@ h6 {
 font-family: 'Capriola', sans-serif;
 }
 
-/*----
-Back to top button
-------*/
+/*--------------------------------------------------------------
+# Back to top button
+--------------------------------------------------------------*/
 .back-to-top {
   position: fixed;
   visibility: hidden;
@@ -62,9 +61,9 @@ Back to top button
   opacity: 1;
 }
 
-/*-----
-Preloader
--------*/
+/*--------------------------------------------------------------
+# Preloader
+--------------------------------------------------------------*/
 #preloader {
   position: fixed;
   top: 0;
@@ -87,8 +86,8 @@ Preloader
   border-radius: 50%;
   width: 60px;
   height: 60px;
-  -webkit-animation: animate-preloader 1.5s linear infinite;
-  animation: animate-preloader 1.5s linear infinite;
+  -webkit-animation: animate-preloader 1s linear infinite;
+  animation: animate-preloader 1s linear infinite;
 }
 
 @-webkit-keyframes animate-preloader {
@@ -111,19 +110,18 @@ Preloader
   }
 }
 
-/*-------
- Disable aos animation delay on mobile devices
----------*/
+/*--------------------------------------------------------------
+# Disable aos animation delay on mobile devices
+--------------------------------------------------------------*/
 @media screen and (max-width: 768px) {
   [data-aos-delay] {
     transition-delay: 0 !important;
   }
-  html{
-    font-size: 65%;
-  }
-/*-----
- Header
-------*/
+}
+
+/*--------------------------------------------------------------
+# Header
+--------------------------------------------------------------*/
 #header {
   position: fixed;
   top: 0;
@@ -148,12 +146,14 @@ Preloader
   #main {
     margin-left: 100px;
   }
-  
-/*--------
- Navigation Menu
-----------*/
+}
 
-/*--- Desktop Navigation ---*/
+/*--------------------------------------------------------------
+# Navigation Menu
+--------------------------------------------------------------*/
+/**
+* Desktop Navigation 
+*/
 .nav-menu {
   padding: 0;
   display: block;
@@ -174,22 +174,22 @@ Preloader
 .nav-menu a:focus {
   display: flex;
   align-items: center;
-  color: lightseagreen;
-  text-align: center;
+  color: darkslategray;
   padding: 10px 18px;
   margin-bottom: 8px;
   transition: 0.3s;
   font-size: 15px;
-  border-radius: 40px;
+  border-radius: 50px;
   background: #e0e0e0;
-  height: 58px;
+  height: 56px;
   width: 100%;
   overflow: hidden;
+  transition: 0.3s;
 }
 
 .nav-menu a i,
 .nav-menu a:focus i {
-  font-size: 25px;
+  font-size: 20px;
 }
 
 .nav-menu a span,
@@ -238,8 +238,9 @@ Preloader
   display: block;
 }
 
-    /* ---- Mobile Navigation ----*/
-    
+/**
+* Mobile Navigation 
+*/
 .mobile-nav-toggle {
   position: fixed;
   right: 10px;
@@ -248,8 +249,8 @@ Preloader
   z-index: 9998;
   border: 0;
   background: none;
-  font-size: 40px;
-  transition: all 0.8s;
+  font-size: 35px;
+  transition: all 0.4s;
   outline: none !important;
   line-height: 0;
   cursor: pointer;
@@ -274,7 +275,9 @@ Preloader
   background-color: lightseagreen;
 }
 
-      /*------- Hero Section -------*/
+/*--------------------------------------------------------------
+# Hero Section
+--------------------------------------------------------------*/
 #hero {
   width: 100%;
   height: 100vh;
@@ -324,23 +327,20 @@ Preloader
 }
 
 #hero .social-links {
-  margin-top: 35px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  margin-top: 30px;
 }
 
 #hero .social-links a {
-  font-size: 38px;
+  font-size: 30px;
   display: inline-block;
-  color: #fff;
+  color: lightseagreen;
   line-height: 1;
-  margin:0 20px;
+  margin-right: 20px;
   transition: 0.3s;
 }
 
 #hero .social-links a:hover {
-  color: lightseagreen;
+  color: darkslategray;
 }
 
 @media (max-width: 992px) {
@@ -366,9 +366,9 @@ Preloader
   }
 }
 
-/*------
- Sections General
---------*/
+/*--------------------------------------------------------------
+# Sections General
+--------------------------------------------------------------*/
 section {
   padding: 60px 0;
   overflow: hidden;
@@ -415,9 +415,9 @@ section {
   margin-bottom: 0;
 }
 
-/*------
- About
---------*/
+/*--------------------------------------------------------------
+# About
+--------------------------------------------------------------*/
 .about .content h3 {
   font-weight: 800;
   font-size: 30px;
@@ -453,9 +453,9 @@ section {
     width: 300px;
 }
 
-/*------
+/*--------------------------------------------------------------
 # Skills
---------*/
+--------------------------------------------------------------*/
 .skills .progress {
   height: 60px;
   display: block;
@@ -469,7 +469,11 @@ section {
   text-transform: uppercase;
   display: block;
   font-weight: 600;
-  font-family: 'Capriola', sans-serif;
+ font-family: 'Capriola', sans-serif;
+
+
+
+
   border-radius: 20px;
   color: darkslategray;
 }
@@ -492,9 +496,9 @@ section {
   background-color: lightseagreen;
 }
 
-/*--------
- Portfolio
-----------*/
+/*--------------------------------------------------------------
+# Portfolio
+--------------------------------------------------------------*/
 .portfolio .portfolio-item {
   margin-bottom: 30px;
 }
@@ -648,9 +652,9 @@ section {
   bottom: 15px;
   right: 15px;
 }
-/*---------
- Services
------------*/
+/*--------------------------------------------------------------
+# Services
+--------------------------------------------------------------*/
 .services .icon-box {
   text-align: center;
   padding: 70px 20px 80px 20px;
@@ -782,9 +786,9 @@ section {
   fill: #11dbcf;
 }
 
-/*-------
- Contact
----------*/
+/*--------------------------------------------------------------
+# Contact
+--------------------------------------------------------------*/
 .contact .info {
   width: 100%;
   background: #fff;
@@ -930,9 +934,9 @@ section {
   }
 }
 
-/*-----
- Footer
--------*/
+/*--------------------------------------------------------------
+# Footer
+--------------------------------------------------------------*/
 #footer {
   background: #f7f8f9;
   color: darkslategray;
@@ -988,23 +992,22 @@ section {
   margin: 0 0 5px 0;
 }
 
-/*-----
+/*--------------------------------------------------------------
 # Thanks
--------*/
+--------------------------------------------------------------*/
 .container-fluid{
     min-height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    background: url("../img/portfolio/bg.png") top right no-repeat;
-    background-size: cover;
-    position: relative;
+   background: url("../img/portfolio/bg.png") top right no-repeat;
+  background-size: cover;
+  position: relative;
 }
 .thanks h1{
-    font-size: 50px;
+    font-size: 30px;
     color: #fff;
-    font-weight: 800;
     text-transform: uppercase;
     margin-bottom: 35px;
     margin-top: -40px;
@@ -1012,9 +1015,8 @@ section {
 }
 .thanks h3{
     color: lightseagreen;
-    font-size: 35px;
+    font-size: 25px;
     margin: 60px 0;
-    text-shadow: 1px 1px 4px black;
 }
 .thanks .button{
    display: flex;
@@ -1024,6 +1026,7 @@ section {
    margin-top: 80px;
 }
 .button .btn-thanks{
+    position: ;
     width: 50%;
     border-radius: 20px;
     padding: 5px 60px;
@@ -1038,26 +1041,5 @@ section {
     border: 2px solid lightseagreen;
     color: #fff;
     transform: scale(1.1);
-}
-/*------
- Button-Whatsapp
---------*/
-.btn-whats{
-    position: relative;
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    background: #4dae2c;
-    box-shadow: 0px 0px 8px black;
-    bottom: 15px;
-    left: 15px;
-}
-.btn-whats i{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 25px;
-    color: #fff;
-    margin-top: 7px;
-   
+    
 }
