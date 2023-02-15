@@ -118,8 +118,6 @@ Preloader
   [data-aos-delay] {
     transition-delay: 0 !important;
   }
-}
-
 /*-----
  Header
 ------*/
@@ -146,6 +144,9 @@ Preloader
 @media (min-width: 991px) {
   #main {
     margin-left: 100px;
+  }
+  html{
+    font-size: 50%;
   }
 }
 
