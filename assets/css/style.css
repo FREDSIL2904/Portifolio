@@ -118,6 +118,9 @@ Preloader
   [data-aos-delay] {
     transition-delay: 0 !important;
   }
+  html{
+    font-size: 65%;
+  }
 /*-----
  Header
 ------*/
@@ -145,11 +148,7 @@ Preloader
   #main {
     margin-left: 100px;
   }
-  html{
-    font-size: 50%;
-  }
-}
-
+  
 /*--------
  Navigation Menu
 ----------*/
