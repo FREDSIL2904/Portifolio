@@ -120,6 +120,11 @@ font-family: 'Capriola', sans-serif;
   [data-aos-delay] {
     transition-delay: 0 !important;
   }
+  #hero .container h1{
+    font-size: 40px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
 }
 
 /*--------------------------------------------------------------
