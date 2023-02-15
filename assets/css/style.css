@@ -114,7 +114,7 @@ font-family: 'Capriola', sans-serif;
 }
 
 /*--------------------------------------------------------------
-# Disable aos animation delay on mobile devices
+Disable aos animation delay on mobile devices
 --------------------------------------------------------------*/
 @media screen and (max-width: 768px) {
   [data-aos-delay] {
@@ -547,8 +547,12 @@ section {
   transition: 0.3s;
   position: relative;
   overflow: hidden;
+  border-radius: 10px;
   z-index: 1;
   background: rgba(69, 80, 91, 0.8);
+}
+.portfolio .portfolio-wrap:hover{
+  box-shadow: 0 0 10px rgba(0,0,0,0.3);
 }
 
 .portfolio .portfolio-wrap::before {
