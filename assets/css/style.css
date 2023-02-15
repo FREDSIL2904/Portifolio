@@ -3,21 +3,28 @@
 /*--------------------------------------------------------------
 # General
 --------------------------------------------------------------*/
+:root{
+  --color1:  #334257;
+  --color2:  #476072;
+  --color3:  #548CA8;
+  --color4:  #EEEEEE;
+  --color5:  #EEF36A;
+}
 html{
   scroll-behavior: smooth;
 }
 body {
 font-family: 'Capriola', sans-serif;
-  color: #272829;
+  color: var(--color2);
 }
 
 a {
-  color: lightseagreen;
+  color: var(--color1);
   text-decoration: none;
 }
 
 a:hover {
-  color: #067ded;
+  color: var(--color2);
   text-decoration: none;
 }
 
@@ -40,7 +47,7 @@ font-family: 'Capriola', sans-serif;
   right: 15px;
   bottom: 15px;
   z-index: 996;
-  background: lightseagreen;
+  background: var(--color3);
   box-shadow: 0px 0px 8px black;
   width: 40px;
   height: 40px;
@@ -56,7 +63,7 @@ font-family: 'Capriola', sans-serif;
 
 .back-to-top:hover {
   background: darkslategray;
-  color: #fff;
+  color: var(--color4);
 }
 
 .back-to-top.active {
@@ -83,9 +90,9 @@ font-family: 'Capriola', sans-serif;
   position: fixed;
   top: calc(50% - 30px);
   left: calc(50% - 30px);
-  border: 8px solid lightseagreen;
-  border-top-color: darkslategray;
-  border-bottom-color: darkslategray;
+  border: 8px solid var(--color1);
+  border-top-color: var(--color3);
+  border-bottom-color: var(--color3);
   border-radius: 50%;
   width: 70px;
   height: 70px;
@@ -144,8 +151,8 @@ Disable aos animation delay on mobile devices
 @media (max-width: 991px) {
   #header {
     width: 300px;
-    background: darkslategray;
-    border-right: 1px solid lightseagreen;
+    background: var(--color1);
+    border-right: 1px solid var(--color2);
     left: -300px;
   }
 }
@@ -189,7 +196,7 @@ Disable aos animation delay on mobile devices
   font-size: 18px;
   text-align: center;
   border-radius: 50px;
-  background: #e0e0e0;
+  background: var(--color4);
   height: 56px;
   width: 100%;
   overflow: hidden;
@@ -204,7 +211,7 @@ Disable aos animation delay on mobile devices
 .nav-menu a span,
 .nav-menu a:focus span {
   padding: 0 5px 0 7px;
-  color: #333;
+  color: var(--color1);
 }
 
 @media (min-width: 992px) {
@@ -217,7 +224,7 @@ Disable aos animation delay on mobile devices
   .nav-menu a span,
   .nav-menu a:focus span {
     display: none;
-    color: #fff;
+    color: var(--color4);
   }
 }
 
@@ -225,15 +232,15 @@ Disable aos animation delay on mobile devices
 .nav-menu .active,
 .nav-menu .active:focus,
 .nav-menu li:hover>a {
-  color: #fff;
-  background: lightseagreen;
+  color: var(--color4);
+  background: var(--color3);
 }
 
 .nav-menu a:hover span,
 .nav-menu .active span,
 .nav-menu .active:focus span,
 .nav-menu li:hover>a span {
-  color: #fff;
+  color: var(--color4);
 }
 
 .nav-menu a:hover,
@@ -253,7 +260,7 @@ Disable aos animation delay on mobile devices
 .mobile-nav-toggle {
   position: fixed;
   right: 10px;
-  color: lightseagreen;
+  color: var(--color3);
   top: 10px;
   z-index: 9998;
   border: 0;
@@ -268,7 +275,7 @@ Disable aos animation delay on mobile devices
 }
 
 .mobile-nav-toggle i {
-  color: darkslategray;
+  color: var(--color3);
 }
 
 .mobile-nav-active {
@@ -281,7 +288,7 @@ Disable aos animation delay on mobile devices
 
 .mobile-nav-active .mobile-nav-toggle {
   color: #fff;
-  background-color: lightseagreen;
+  background-color: var(--color3);
 }
 
 /*--------------------------------------------------------------
@@ -316,18 +323,18 @@ Disable aos animation delay on mobile devices
   font-size: 64px;
   font-weight: normal;
   line-height: 56px;
-  color: lightseagreen;
+  color: var(--color3);
 }
 
 #hero p {
-  color: #fff;
+  color: var(--color1);
   margin: 20px 0 0 0;
   font-size: 26px;
   font-family: 'Capriola', sans-serif;
 }
 
 #hero p span {
-  color: #fff;
+  color: var(--color3);
   letter-spacing: 1px;
   margin: 20px 0;
 }
@@ -345,14 +352,14 @@ Disable aos animation delay on mobile devices
 
 #hero .social-links a {
   font-size: 40px;
-  color: #fff;
+  color: var(--color3);
   line-height: 1;
   margin-right: 20px;
   transition: 0.3s;
 }
 
 #hero .social-links a:hover {
-  color: lightseagreen;
+  color: var(--color2);
   transform: scale(1.2);
 }
 
@@ -372,10 +379,11 @@ Disable aos animation delay on mobile devices
     margin-bottom: 30px;
     font-size: 20px;
     line-height: 24px;
+    color: var(--color4);
   }
   #hero p span{
       font-size: 25px;
-      color: #fff;
+      color: var(--color4);
   }
 }
 
@@ -399,7 +407,7 @@ section {
   margin-bottom: 20px;
   padding-bottom: 20px;
   position: relative;
-  color: darkslategray;
+  color: var(--color1);
 }
 
 .section-title h2::before {
@@ -408,7 +416,7 @@ section {
   display: block;
   width: 120px;
   height: 1px;
-  background: #ddd;
+  background: var(--color3);
   bottom: 1px;
   left: calc(50% - 60px);
 }
@@ -419,13 +427,14 @@ section {
   display: block;
   width: 40px;
   height: 4px;
-  background: lightseagreen;
+  background: var(--color1);
   bottom: 0;
   left: calc(50% - 20px);
 }
 
 .section-title p {
   margin-bottom: 0;
+  color: var(--color2);
 }
 
 /*--------------------------------------------------------------
@@ -434,7 +443,7 @@ section {
 .about .content h3 {
   font-weight: 800;
   font-size: 30px;
-  color: darkslategray;
+  color: var(--color1);
 }
 
 .about .content ul {
@@ -455,12 +464,13 @@ section {
 .about .content ul i {
   font-size: 16px;
   margin-right: 5px;
-  color: lightseagreen;
+  color: var(--color1);
   line-height: 0;
 }
 
 .about .content p:last-child {
   margin-bottom: 0;
+  color: var(--color3);
 }
 .about img{
     width: 300px;
@@ -488,7 +498,7 @@ section {
 
 
   border-radius: 20px;
-  color: darkslategray;
+  color: var(--color1);
 }
 
 .skills .progress .skill .val {
@@ -497,7 +507,7 @@ section {
 }
 
 .skills .progress-bar-wrap {
-  background: #f2f3f5;
+  background: var(--color4);
   border-radius: 20px;
 }
 
@@ -506,7 +516,7 @@ section {
   height: 10px;
   border-radius: 20px;
   transition: 0.9s;
-  background-color: lightseagreen;
+  background-color: var(--color3);
 }
 
 /*--------------------------------------------------------------
@@ -597,8 +607,8 @@ section {
   position: absolute;
   top: 35px;
   left: 35px;
-  border-top: 3px solid lightseagreen;
-  border-left: 3px solid lightseagreen;
+  border-top: 3px solid var(--color3);
+  border-left: 3px solid var(--color3);
   transition: all 0.5s ease 0s;
   z-index: 9994;
 }
@@ -611,20 +621,20 @@ section {
   position: absolute;
   bottom: 35px;
   right: 35px;
-  border-bottom: 3px solid lightseagreen;
-  border-right: 3px solid lightseagreen;
+  border-bottom: 3px solid var(--color3);
+  border-right: 3px solid var(--color3);
   transition: all 0.5s ease 0s;
   z-index: 9994;
 }
 
 .portfolio .portfolio-wrap .portfolio-info h4 {
   font-size: 35px;
-  color: #fff;
+  color: var(--color4);
   font-weight: 800;
 }
 
 .portfolio .portfolio-wrap .portfolio-info p {
-  color: #fff;
+  color: var(--color4);
   font-size: 25px;
   text-transform: uppercase;
   padding: 0;
@@ -637,7 +647,7 @@ section {
 }
 
 .portfolio .portfolio-wrap .portfolio-links a {
-  color: #fff;
+  color: var(--color4);
   margin: 0 5px;
   font-size: 30px;
   display: inline-block;
@@ -645,7 +655,7 @@ section {
 }
 
 .portfolio .portfolio-wrap .portfolio-links a:hover {
-  color: lightseagreen;
+  color: var(--color3);
 }
 
 .portfolio .portfolio-wrap:hover::before {
@@ -676,7 +686,7 @@ section {
   text-align: center;
   padding: 70px 20px 80px 20px;
   transition: all ease-in-out 0.3s;
-  background: #fff;
+  background: var(--color4);
   border-radius: 20px;
   box-shadow: 0px 0px 6px rgba(0,0,0,0.5);
 }
@@ -716,7 +726,7 @@ section {
 }
 
 .services .icon-box h4 a {
-  color: darkslategray;
+  color: var(--color1);
   transition: ease-in-out 0.3s;
 }
 
@@ -727,7 +737,7 @@ section {
 }
 
 .services .icon-box:hover {
-  border-color: #fff;
+  border-color: var(--color3);
   box-shadow: 0px 0 35px 0 rgba(0, 0, 0, 0.3);
 }
 
@@ -813,11 +823,11 @@ section {
 
 .contact .info i {
   font-size: 20px;
-  color: lightseagreen;
+  color: var(--color1);
   float: left;
   width: 44px;
   height: 44px;
-  background: #eef7ff;
+  background: var(--color4);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -830,14 +840,14 @@ section {
   font-size: 22px;
   font-weight: 800;
   margin-bottom: 5px;
-  color: darkslategray;
+  color: var(--color2);
 }
 
 .contact .info p {
   padding: 0 0 0 60px;
   margin-bottom: 0;
   font-size: 18px;
-  color: #728394;
+  color: var(--color3);
 }
 
 .contact .info .email,
@@ -848,7 +858,7 @@ section {
 .contact .info .email:hover i,
 .contact .info .address:hover i,
 .contact .info .phone:hover i {
-  background: lightseagreen;
+  background: var(--color3);
   color: #fff;
 }
 
@@ -919,7 +929,7 @@ section {
 }
 
 .contact .php-email-form button[type=submit] {
-  background: lightseagreen;
+  background: var(--color1);
   border: 0;
   padding: 10px 35px;
   color: #fff;
@@ -928,7 +938,7 @@ section {
 }
 
 .contact .php-email-form button[type=submit]:hover {
-  background: darkslategray;
+  background: var(--color3);
 }
 
 @-webkit-keyframes animate-loading {
@@ -955,8 +965,8 @@ section {
 # Footer
 --------------------------------------------------------------*/
 #footer {
-  background: #f7f8f9;
-  color: darkslategray;
+  background: var(--color4);
+  color: var(--color1);
   font-size: 14px;
   text-align: center;
   padding: 30px 0;
@@ -987,7 +997,7 @@ section {
 #footer .social-links a {
   font-size: 20px;
   display: inline-block;
-  background: lightseagreen;
+  background: var(--color1);
   color: #fff;
   line-height: 1;
   padding: 8px 0;
@@ -1000,7 +1010,7 @@ section {
 }
 
 #footer .social-links a:hover {
-  background: darkslategray;
+  background: var(--color3);
   color: #fff;
   text-decoration: none;
 }
@@ -1031,7 +1041,7 @@ section {
     letter-spacing: 2px;
 }
 .thanks h3{
-    color: lightseagreen;
+    color: var(--color3);
     font-size: 25px;
     margin: 60px 0;
 }
@@ -1047,7 +1057,7 @@ section {
     width: 50%;
     border-radius: 20px;
     padding: 5px 60px;
-    background-color: lightseagreen;
+    background-color: var(--color1);
     color: #fff;
     font-size: 20px;
     margin-top: 30px;
@@ -1055,7 +1065,7 @@ section {
 }
 .button .btn-thanks:hover{
     background: none;
-    border: 2px solid lightseagreen;
+    border: 2px solid var(--color3);
     color: #fff;
     transform: scale(1.1);
     
