@@ -529,6 +529,17 @@ section {
 .portfolio .portfolio-item {
   margin-bottom: 30px;
 }
+.portfolio .portfolio-item img{
+  width: 380px;
+  height: 320px;
+  object-fit: cover;
+}
+.portfolio .portfolio-item img:hover{
+  transform: scale(.06);
+
+  
+}
+  
 
 .portfolio #portfolio-flters {
   padding: 0;
