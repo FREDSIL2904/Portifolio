@@ -307,7 +307,7 @@ Disable aos animation delay on mobile devices
     padding-left: 160px;
   }
 }
-
+  
 #hero:before {
   content: "";
   background: rgba(0,0,0,0.2);
@@ -327,14 +327,14 @@ Disable aos animation delay on mobile devices
 }
 
 #hero p {
-  color: var(--color1);
+  color: var(--color4);
   margin: 20px 0 0 0;
   font-size: 26px;
   font-family: 'Capriola', sans-serif;
 }
 
 #hero p span {
-  color: var(--color3);
+  color: var(--color4);
   letter-spacing: 1px;
   margin: 20px 0;
 }
@@ -345,7 +345,7 @@ Disable aos animation delay on mobile devices
 #hero .social-links {
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
   margin-top: 50px;
   margin-left: 40px;
 }
@@ -384,6 +384,9 @@ Disable aos animation delay on mobile devices
   #hero p span{
       font-size: 25px;
       color: var(--color4);
+  }
+  #hero .social-links{
+   justify-content: center;
   }
 }
 
