@@ -211,7 +211,7 @@ Disable aos animation delay on mobile devices
 .nav-menu a span,
 .nav-menu a:focus span {
   padding: 0 5px 0 7px;
-  color: var(--color1);
+  color: var(--color4);
 }
 
 @media (min-width: 992px) {
