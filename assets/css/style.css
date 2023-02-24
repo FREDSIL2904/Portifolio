@@ -265,8 +265,8 @@ Disable aos animation delay on mobile devices
   z-index: 9998;
   border: 0;
   background: none;
-  font-size: 35px;
-  transition: all 0.4s;
+  font-size: 50px;
+  transition: all 0.5s;
   outline: none !important;
   line-height: 0;
   cursor: pointer;
