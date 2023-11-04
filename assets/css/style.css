@@ -1,30 +1,27 @@
-@import url('https://fonts.googleapis.com/css2?family=Capriola&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
-/*--------------------------------------------------------------
-# General
---------------------------------------------------------------*/
 :root{
-  --color1:  #334257;
-  --color2:  #476072;
-  --color3:  #548CA8;
-  --color4:  #EEEEEE;
-  --color5:  #EEF36A;
+  --color-1: #01EDFE;
+  --color-2: #313743;
+  --bg-color: #1F232E;
+  --txt-color: #fff;
+  --hover: #90dce2;
 }
 html{
   scroll-behavior: smooth;
 }
 body {
-font-family: 'Capriola', sans-serif;
-  color: var(--color2);
+font-family: 'Poppins', sans-serif;
+  background-color: var(--bg-color);
 }
 
 a {
-  color: var(--color1);
+  color: var(--txt-color);
   text-decoration: none;
 }
 
 a:hover {
-  color: var(--color2);
+  color: var(--hover);
   text-decoration: none;
 }
 
@@ -34,12 +31,10 @@ h3,
 h4,
 h5,
 h6 {
-font-family: 'Capriola', sans-serif;
+font-family: 'Lato', sans-serif;
 }
 
-/*--------------------------------------------------------------
-# Back to top button
---------------------------------------------------------------*/
+/*--- #Top button ----*/
 .back-to-top {
   position: fixed;
   visibility: hidden;
@@ -47,23 +42,23 @@ font-family: 'Capriola', sans-serif;
   right: 15px;
   bottom: 15px;
   z-index: 996;
-  background: var(--color3);
-  box-shadow: 0px 0px 8px black;
+  background: var(--color-2);
+  box-shadow: 0px 5px 10px black;
   width: 40px;
   height: 40px;
-  border-radius: 50px;
+  border-radius: 4rem;
   transition: all 0.4s;
 }
 
 .back-to-top i {
   font-size: 28px;
-  color: #fff;
+  color: var(--txt-color);
   line-height: 0;
 }
 
 .back-to-top:hover {
-  background: darkslategray;
-  color: var(--color4);
+  background: var(--hover);
+  color: var(--bg-color);
 }
 
 .back-to-top.active {
@@ -71,9 +66,7 @@ font-family: 'Capriola', sans-serif;
   opacity: 1;
 }
 
-/*--------------------------------------------------------------
-# Preloader
---------------------------------------------------------------*/
+/*---- #Preloader -----*/
 #preloader {
   position: fixed;
   top: 0;
@@ -82,7 +75,7 @@ font-family: 'Capriola', sans-serif;
   bottom: 0;
   z-index: 9999;
   overflow: hidden;
-  background: #fff;
+  background: var(--txt-color);
 }
 
 #preloader:before {
@@ -90,9 +83,9 @@ font-family: 'Capriola', sans-serif;
   position: fixed;
   top: calc(50% - 30px);
   left: calc(50% - 30px);
-  border: 8px solid var(--color1);
-  border-top-color: var(--color3);
-  border-bottom-color: var(--color3);
+  border: 6px solid var(--txt-color);
+  border-top-color: var(--color-2);
+  border-bottom-color: var(--color-2);
   border-radius: 50%;
   width: 70px;
   height: 70px;
@@ -120,9 +113,7 @@ font-family: 'Capriola', sans-serif;
   }
 }
 
-/*--------------------------------------------------------------
-Disable aos animation delay on mobile devices
---------------------------------------------------------------*/
+
 @media screen and (max-width: 768px) {
   [data-aos-delay] {
     transition-delay: 0 !important;
@@ -134,9 +125,7 @@ Disable aos animation delay on mobile devices
   }
 }
 
-/*--------------------------------------------------------------
-# Header
---------------------------------------------------------------*/
+/*---- # Header. ----*/
 #header {
   position: fixed;
   top: 0;
@@ -150,25 +139,20 @@ Disable aos animation delay on mobile devices
 
 @media (max-width: 991px) {
   #header {
-    width: 300px;
-    background: var(--color1);
-    border-right: 1px solid var(--color2);
-    left: -300px;
+    width: 250px;
+    background: var(--color-2);
+    border-right: 1px solid var(--color-1);
+    left: -250px;
   }
 }
 
 @media (min-width: 991px) {
   #main {
-    margin-left: 100px;
+     margin-left: 100px;
   }
 }
 
-/*--------------------------------------------------------------
-# Navigation Menu
---------------------------------------------------------------*/
-/**
-* Desktop Navigation 
-*/
+/*----#Navigation Menu ---*/
 .nav-menu {
   padding: 0;
   display: block;
@@ -189,14 +173,14 @@ Disable aos animation delay on mobile devices
 .nav-menu a:focus {
   display: flex;
   align-items: center;
-  color: darkslategray;
+  color: var(--bg-color);
   padding: 10px 18px;
   margin-bottom: 8px;
   transition: 0.3s;
   font-size: 18px;
   text-align: center;
   border-radius: 50px;
-  background: var(--color4);
+  background: var(--txt-color);
   height: 56px;
   width: 100%;
   overflow: hidden;
@@ -211,7 +195,7 @@ Disable aos animation delay on mobile devices
 .nav-menu a span,
 .nav-menu a:focus span {
   padding: 0 5px 0 7px;
-  color: var(--color1);
+  color: var(--bg-color);
 }
 
 @media (min-width: 992px) {
@@ -224,7 +208,7 @@ Disable aos animation delay on mobile devices
   .nav-menu a span,
   .nav-menu a:focus span {
     display: none;
-    color: var(--color4);
+    color: var(--bg-color);
   }
 }
 
@@ -232,21 +216,23 @@ Disable aos animation delay on mobile devices
 .nav-menu .active,
 .nav-menu .active:focus,
 .nav-menu li:hover>a {
-  color: var(--color4);
-  background: var(--color3);
+  color: var(--txt-color);
+  background-color: transparent;
+  border: 2px solid var(--color-1);
 }
 
 .nav-menu a:hover span,
 .nav-menu .active span,
 .nav-menu .active:focus span,
 .nav-menu li:hover>a span {
-  color: var(--color4);
+  color: var(--txt-color);
 }
 
 .nav-menu a:hover,
 .nav-menu li:hover>a {
   width: 100%;
-  color: #fff;
+  color: var(--bg-color);
+  background-color: trasparent;
 }
 
 .nav-menu a:hover span,
@@ -254,18 +240,16 @@ Disable aos animation delay on mobile devices
   display: block;
 }
 
-/**
-* Mobile Navigation 
-*/
+/*--- Mobile Navigation --*/
 .mobile-nav-toggle {
   position: fixed;
   right: 10px;
-  color: var(--color3);
+  color: var(--color-1);
   top: 10px;
   z-index: 9998;
   border: 0;
   background: none;
-  font-size: 50px;
+  font-size: 40px;
   transition: all 0.5s;
   outline: none !important;
   line-height: 0;
@@ -275,7 +259,7 @@ Disable aos animation delay on mobile devices
 }
 
 .mobile-nav-toggle i {
-  color: var(--color3);
+  color: var(--color-2);
 }
 
 .mobile-nav-active {
@@ -287,24 +271,23 @@ Disable aos animation delay on mobile devices
 }
 
 .mobile-nav-active .mobile-nav-toggle {
-  color: #fff;
-  background-color: var(--color3);
+  color: var(--bg-color);
+  background-color: var(--hover);
 }
 
-/*--------------------------------------------------------------
-# Hero Section
---------------------------------------------------------------*/
+/*------ #Hero Section ----*/
 #hero {
   width: 100%;
   height: 100vh;
-  background: url("../img/portfolio/bg.png") top right no-repeat;
+  background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.8)), url('/assets/img/portfolio/herobg.jpeg');
   background-size: cover;
+  background-position: center;
   position: relative;
 }
 
 @media (min-width: 992px) {
   #hero {
-    padding-left: 160px;
+  padding-left: 160px; 
   }
 }
   
@@ -320,46 +303,44 @@ Disable aos animation delay on mobile devices
 
 #hero h1 {
   margin: 0;
-  font-size: 64px;
-  font-weight: normal;
+  font-size: 60px;
+  font-weight: 600;
+  letter-spacing: 3px;
   line-height: 56px;
-  color: var(--color3);
+  color: var(--txt-color);
 }
 
 #hero p {
-  color: var(--color4);
-  margin: 20px 0 0 0;
-  font-size: 26px;
-  font-family: 'Capriola', sans-serif;
+  color: var(--txt-color);
+  margin: 20px 0;
+  font-size: 45px;
 }
 
 #hero p span {
-  color: var(--color4);
+  color: var(--color-1);
   letter-spacing: 1px;
   margin: 20px 0;
-}
-#hero p{
-    margin: 20px 0;
+  font-weight: 600;
 }
 
 #hero .social-links {
   display: flex;
   align-items: center;
   justify-content: flex-start;
-  margin-top: 50px;
+  margin-top: 6rem;
   margin-left: 35px;
 }
 
 #hero .social-links a {
-  font-size: 45px;
-  color: var(--color4);
+  font-size: 32px;
   line-height: 1;
   margin-right: 20px;
+  margin-top: 30px;
   transition: 0.3s;
 }
 
 #hero .social-links a:hover {
-  color: var(--color3);
+  color: var(--hover);
   transform: scale(1.2);
 }
 
@@ -377,22 +358,21 @@ Disable aos animation delay on mobile devices
 
   #hero p {
     margin-bottom: 30px;
-    font-size: 20px;
+    font-size: 25px;
     line-height: 24px;
-    color: var(--color4);
+    color: var(--txt-color);
   }
   #hero p span{
-      font-size: 25px;
-      color: var(--color4);
+      font-size: 20px;
+      color: var(--color-1);
   }
   #hero .social-links{
    justify-content: center;
   }
+  
 }
 
-/*--------------------------------------------------------------
-# Sections General
---------------------------------------------------------------*/
+/*---- #Sections General ----*/
 section {
   padding: 30px 0;
   overflow: hidden;
@@ -405,12 +385,15 @@ section {
 
 .section-title h2 {
   font-size: 35px;
-  font-weight: bolder;
+  font-weight: 800;
   text-transform: uppercase;
   margin-bottom: 20px;
   padding-bottom: 20px;
   position: relative;
-  color: var(--color1);
+  color: var(--txt-color);
+}
+.section-title h2 span{
+  color: var(--color-1);
 }
 
 .section-title h2::before {
@@ -419,7 +402,7 @@ section {
   display: block;
   width: 120px;
   height: 1px;
-  background: var(--color3);
+  background: var(--hover);
   bottom: 1px;
   left: calc(50% - 60px);
 }
@@ -430,23 +413,22 @@ section {
   display: block;
   width: 40px;
   height: 4px;
-  background: var(--color1);
+  background: var(--color-1);
   bottom: 0;
   left: calc(50% - 20px);
 }
 
 .section-title p {
   margin-bottom: 0;
-  color: var(--color2);
+  color: var(--txt-color);
 }
 
-/*--------------------------------------------------------------
-# About
---------------------------------------------------------------*/
+/*--- #About ----*/
 .about .content h3 {
   font-weight: 800;
   font-size: 30px;
-  color: var(--color1);
+  color: var(--txt-color);
+  background-color: var(--color-1);
 }
 
 .about .content ul {
@@ -462,43 +444,78 @@ section {
 
 .about .content ul strong {
   margin-right: 10px;
+  color: var(--color-1);
+}
+.about .content ul span{
+  color: var(--txt-color);
 }
 
 .about .content ul i {
   font-size: 16px;
   margin-right: 5px;
-  color: var(--color1);
+  color: var(--color-1);
   line-height: 0;
 }
 
 .about .content p:last-child {
   margin-bottom: 0;
-  color: var(--color3);
+  color: var(--txt-color);
 }
 .about img{
-    width: 300px;
-    height: 300px;
+    width: 250px;
+    height: 250px;
     object-fit: cover;
     border-radius: 50%;
-    box-shadow: 0px 0px 8px rgba(0,0,0,0.8);
+    border: 2px solid var(--color1);
+    box-shadow: 0px 5px 15px rgba(0,0,0,0.8);
 }
 .btn-pdf{
+    display: inline-block;
+    text-align: center;
     position: relative;
-    width: 50%;
-    border-radius: 10px;
+    margin-top: -2rem;
+    margin-right: 2rem;
+    width: 30%;
+    border-radius: 5rem;
     padding: 10px 40px;
-    background-color: var(--color1);
-    color: #fff;
-    font-size: 20px;
+    background-color: var(--color-1);
+    color: var(--bg-color);
+    font-size: 18px;
     transition: 0.5s ease-in-out;
 }
 .btn-pdf:hover{
-  background: var(--color4);
-  color: var(--color1);
+  background: transparent;
+  color: var(--txt-color);
+  border: 2px solid var(--color-1);
 }
-/*--------------------------------------------------------------
-# Skills
---------------------------------------------------------------*/
+@media(max-width: 992px){
+  .about-text{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+  }
+  .about-text p{
+    padding: 0;
+    margin-bottom: .3rem;
+  }
+  .btn-pdf{
+    width: 50%;
+    margin: 0;
+  }
+}
+@media(max-width: 768px){
+  .about img{
+    width: 180px;
+    height: 180px;
+  }
+  .btn-pdf{
+    width: 100%;
+  }
+}
+/*---- #Skills ----*/
 .skills .progress {
   height: 60px;
   display: block;
@@ -512,13 +529,9 @@ section {
   text-transform: uppercase;
   display: block;
   font-weight: 600;
- font-family: 'Capriola', sans-serif;
-
-
-
-
+ font-family: 'Lato', sans-serif;
   border-radius: 20px;
-  color: var(--color1);
+  color: var(--color-1);
 }
 
 .skills .progress .skill .val {
@@ -527,8 +540,8 @@ section {
 }
 
 .skills .progress-bar-wrap {
-  background: var(--color4);
-  border-radius: 20px;
+  background: var(--txt-color);
+  border-radius: 3rem;
 }
 
 .skills .progress-bar {
@@ -536,18 +549,19 @@ section {
   height: 10px;
   border-radius: 20px;
   transition: 0.9s;
-  background-color: var(--color3);
+  background-color: var(--hover);
 }
 
-/*--------------------------------------------------------------
-# Portfolio
---------------------------------------------------------------*/
+/*---- #Portfolio ----*/
+.portfolio{
+  background-color: var(--color-2);
+}
 .portfolio .portfolio-item {
   margin-bottom: 30px;
 }
 .portfolio .portfolio-item img{
-  width: 380px;
-  height: 320px;
+  width: 100%;
+  height: 100%;
   object-fit: cover;
 }
 .portfolio .portfolio-item img:hover{
@@ -561,8 +575,8 @@ section {
   margin: 0 auto 25px auto;
   list-style: none;
   text-align: center;
-  background: #fff;
-  border-radius: 50px;
+  background: var(--txt-color);
+  border-radius: 6rem;
   padding: 2px 15px;
 }
 
@@ -574,14 +588,14 @@ section {
   font-weight: 600;
   line-height: 1;
   text-transform: uppercase;
-  color: #272829;
+  color: var(--color-1);
   margin-bottom: 5px;
   transition: all 0.3s ease-in-out;
 }
 
 .portfolio #portfolio-flters li:hover,
 .portfolio #portfolio-flters li.filter-active {
-  color: lightseagreen;
+  color: var(--color-1);
 }
 
 .portfolio #portfolio-flters li:last-child {
@@ -637,8 +651,8 @@ section {
   position: absolute;
   top: 35px;
   left: 35px;
-  border-top: 3px solid var(--color3);
-  border-left: 3px solid var(--color3);
+  border-top: 3px solid var(--color-1);
+  border-left: 3px solid var(--color-1);
   transition: all 0.5s ease 0s;
   z-index: 9994;
 }
@@ -651,20 +665,20 @@ section {
   position: absolute;
   bottom: 35px;
   right: 35px;
-  border-bottom: 3px solid var(--color3);
-  border-right: 3px solid var(--color3);
+  border-bottom: 3px solid var(--color-1);
+  border-right: 3px solid var(--color-1);
   transition: all 0.5s ease 0s;
   z-index: 9994;
 }
 
 .portfolio .portfolio-wrap .portfolio-info h4 {
   font-size: 35px;
-  color: var(--color4);
+  color: var(--hover);
   font-weight: 800;
 }
 
 .portfolio .portfolio-wrap .portfolio-info p {
-  color: var(--color4);
+  color: var(--txt-color);
   font-size: 25px;
   text-transform: uppercase;
   padding: 0;
@@ -677,7 +691,7 @@ section {
 }
 
 .portfolio .portfolio-wrap .portfolio-links a {
-  color: var(--color4);
+  color: var(--hover);
   margin: 0 5px;
   font-size: 30px;
   display: inline-block;
@@ -685,7 +699,7 @@ section {
 }
 
 .portfolio .portfolio-wrap .portfolio-links a:hover {
-  color: var(--color3);
+  color: var(--color-1);
 }
 
 .portfolio .portfolio-wrap:hover::before {
@@ -709,9 +723,7 @@ section {
   bottom: 15px;
   right: 15px;
 }
-/*--------------------------------------------------------------
-# Services
---------------------------------------------------------------*/
+/*---- #Services ----*/
 .services .icon-box {
   text-align: center;
   padding: 70px 20px 80px 20px;
@@ -746,7 +758,7 @@ section {
 
 .services .icon-box .icon svg path {
   transition: 0.5s;
-  fill: #f5f5f5;
+  fill: var(--txt-color);
 }
 
 .services .icon-box h4 {
@@ -756,27 +768,28 @@ section {
 }
 
 .services .icon-box h4 a {
-  color: var(--color1);
+  color: var(--color-1);
   transition: ease-in-out 0.3s;
 }
 
 .services .icon-box p {
+  color: var(--txt-color);
   line-height: 24px;
   font-size: 18px;
   margin-bottom: 0;
 }
 
 .services .icon-box:hover {
-  border-color: var(--color3);
-  box-shadow: 0px 0 35px 0 rgba(0, 0, 0, 0.3);
+  background-color: rgba(255,255,255,0.3);
+  box-shadow: 0px 0 35px rgba(0,0,0,0.8);
 }
 
 .services .iconbox-blue i {
-  color: #47aeff;
+  color: var(--color-1);
 }
 
 .services .iconbox-blue:hover .icon i {
-  color: #fff;
+  color: var(--txt-color);
 }
 
 .services .iconbox-blue:hover .icon path {
@@ -788,7 +801,7 @@ section {
 }
 
 .services .iconbox-orange:hover .icon i {
-  color: #fff;
+  color: var(--txt-color);
 }
 
 .services .iconbox-orange:hover .icon path {
@@ -843,21 +856,19 @@ section {
   fill: #11dbcf;
 }
 
-/*--------------------------------------------------------------
-# Contact
---------------------------------------------------------------*/
+/*---- #Contact -----*/
 .contact .info {
   width: 100%;
-  background: #fff;
+  background: var(--bg-color);
 }
 
 .contact .info i {
   font-size: 20px;
-  color: var(--color1);
+  color: var(--color-1);
   float: left;
   width: 44px;
   height: 44px;
-  background: var(--color4);
+  background: var(--color-2);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -870,14 +881,14 @@ section {
   font-size: 22px;
   font-weight: 800;
   margin-bottom: 5px;
-  color: var(--color2);
+  color: var(--txt-color);
 }
 
 .contact .info p {
   padding: 0 0 0 60px;
   margin-bottom: 0;
   font-size: 18px;
-  color: var(--color3);
+  color: var(--color-1);
 }
 
 .contact .info .email,
@@ -888,30 +899,17 @@ section {
 .contact .info .email:hover i,
 .contact .info .address:hover i,
 .contact .info .phone:hover i {
-  background: var(--color3);
-  color: #fff;
+  background: var(--color-1);
+  color: var(--bg-color);
 }
 
 .contact .php-email-form {
   width: 100%;
-  background: #fff;
+  background: var(--bg-color);
 }
 
 .contact .php-email-form .form-group {
   padding-bottom: 8px;
-}
-
-.contact .php-email-form .error-message {
-  display: none;
-  color: #fff;
-  background: #ed3c0d;
-  text-align: left;
-  padding: 15px;
-  font-weight: 600;
-}
-
-.contact .php-email-form .error-message br+br {
-  margin-top: 25px;
 }
 
 .contact .php-email-form .sent-message {
@@ -947,28 +945,39 @@ section {
 .contact .php-email-form textarea {
   border-radius: 4px;
   box-shadow: none;
-  font-size: 18px;
+  font-size: 1rem;
+  color: var(--hover);
 }
 
 .contact .php-email-form input {
   height: 44px;
+  color: var(--txt-color);
+  border-radius: 4rem;
+  background-color: var(--color-2);
+  border: 2px solid var(--hover);
 }
 
 .contact .php-email-form textarea {
   padding: 10px 12px;
+  border-radius: 1rem;
+  background-color: var(--color-2);
+  border: 2px solid var(--hover);
+  
 }
 
 .contact .php-email-form button[type=submit] {
-  background: var(--color1);
+  background: var(--color-1);
   border: 0;
-  padding: 10px 35px;
-  color: #fff;
+  padding: 10px 8rem;
+  color: var(--bg-color);
   transition: 0.4s;
-  border-radius: 50px;
+  border-radius: 6rem;
 }
 
 .contact .php-email-form button[type=submit]:hover {
-  background: var(--color3);
+  background: transparent;
+  border: 2px solid var(--color-1);
+  color: var(--txt-color);
 }
 
 @-webkit-keyframes animate-loading {
@@ -991,31 +1000,23 @@ section {
   }
 }
 
-/*--------------------------------------------------------------
-# Footer
---------------------------------------------------------------*/
+/*---- #Footer -----*/
 #footer {
-  background: var(--color4);
-  color: var(--color1);
+  background: var(--color-2);
+  color: var(--txt-color);
   font-size: 14px;
   text-align: center;
-  padding: 30px 0;
+  padding: 2rem 0;
+  margin-top: 3rem;
 }
 
 #footer h3 {
-  font-size: 36px;
+  font-size: 1.5rem;
   font-weight: 800;
+  letter-spacing: 3px;
   position: relative;
- font-family: 'Capriola', sans-serif;
   padding: 0;
   margin: 0 0 15px 0;
-}
-
-#footer p {
-  font-size: 18px;
-  font-style: italic;
-  padding: 0;
-  margin: 0 0 40px 0;
 }
 
 #footer .social-links {
@@ -1025,8 +1026,7 @@ section {
 #footer .social-links a {
   font-size: 20px;
   display: inline-block;
-  background: var(--color1);
-  color: #fff;
+  color: var(--txt-color);
   line-height: 1;
   padding: 8px 0;
   margin-right: 4px;
@@ -1047,31 +1047,31 @@ section {
   margin: 0 0 5px 0;
 }
 
-/*--------------------------------------------------------------
-# Thanks
---------------------------------------------------------------*/
+/*--- #Thanks ----*/
 .container-fluid{
     min-height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
-   background: url("../img/portfolio/bg.png") top right no-repeat;
+    background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.8)), url('/assets/img/portfolio/herobg.jpeg');
   background-size: cover;
   position: relative;
 }
 .thanks h1{
-    font-size: 30px;
-    color: #fff;
+    font-size: 25px;
+    color: var(--color-1);
+    font-weight: 600;
     text-transform: uppercase;
     margin-bottom: 35px;
-    margin-top: -40px;
+    margin-top: -35px;
     letter-spacing: 2px;
 }
 .thanks h3{
-    color: var(--color3);
-    font-size: 25px;
-    margin: 60px 0;
+    color: #fff;
+    font-size: 22px;
+    font-weight: 500;
+    margin: 40px 0;
 }
 .thanks .button{
    display: flex;
@@ -1081,20 +1081,21 @@ section {
    margin-top: 80px;
 }
 .button .btn-thanks{
-    position: ;
-    width: 50%;
+    position: relative;
+    width: 80%;
     border-radius: 20px;
-    padding: 5px 60px;
-    background-color: var(--color1);
-    color: #fff;
+    padding: 5px 80px;
+    background-color: var(--color-1);
+    color: var(--bg-color);
     font-size: 20px;
     margin-top: 30px;
+    letter-spacing: 3px;
     transition: 0.5s ease-in-out;
 }
 .button .btn-thanks:hover{
     background: none;
-    border: 2px solid var(--color3);
-    color: #fff;
+    border: 2px solid var(--color-1);
+    color: var(--txt-color);
     transform: scale(1.1);
     
 }
