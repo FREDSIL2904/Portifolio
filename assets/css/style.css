@@ -1,17 +1,20 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
 :root{
-  --color-1: #01EDFE;
-  --color-2: #313743;
+  --color-1: #0798A2;
+  --color-2: #2D3646;
   --bg-color: #1F232E;
   --txt-color: #fff;
   --hover: #90dce2;
+}
+*{
+  text-transform: capitalize;
 }
 html{
   scroll-behavior: smooth;
 }
 body {
-font-family: 'Poppins', sans-serif;
+  font-family: 'Poppins', sans-serif;
   background-color: var(--bg-color);
 }
 
@@ -66,7 +69,8 @@ font-family: 'Lato', sans-serif;
   opacity: 1;
 }
 
-/*---- #Preloader -----*/
+/*--- #Preloader ---*/
+
 #preloader {
   position: fixed;
   top: 0;
@@ -126,6 +130,7 @@ font-family: 'Lato', sans-serif;
 }
 
 /*---- # Header. ----*/
+
 #header {
   position: fixed;
   top: 0;
@@ -152,7 +157,7 @@ font-family: 'Lato', sans-serif;
   }
 }
 
-/*----#Navigation Menu ---*/
+/*----# Menu ---*/
 .nav-menu {
   padding: 0;
   display: block;
@@ -240,7 +245,8 @@ font-family: 'Lato', sans-serif;
   display: block;
 }
 
-/*--- Mobile Navigation --*/
+/*--- Mobile--*/
+
 .mobile-nav-toggle {
   position: fixed;
   right: 10px;
@@ -275,7 +281,8 @@ font-family: 'Lato', sans-serif;
   background-color: var(--hover);
 }
 
-/*------ #Hero Section ----*/
+/*------ #Hero ----*/
+
 #hero {
   width: 100%;
   height: 100vh;
@@ -372,7 +379,7 @@ font-family: 'Lato', sans-serif;
   
 }
 
-/*---- #Sections General ----*/
+/*---- * Sections ----*/
 section {
   padding: 30px 0;
   overflow: hidden;
@@ -424,6 +431,7 @@ section {
 }
 
 /*--- #About ----*/
+
 .about .content h3 {
   font-weight: 800;
   font-size: 30px;
@@ -499,6 +507,7 @@ section {
   }
   .about-text p{
     padding: 0;
+    margin: 0;
     margin-bottom: .3rem;
   }
   .btn-pdf{
